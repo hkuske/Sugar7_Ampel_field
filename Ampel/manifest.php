@@ -35,18 +35,28 @@
  ********************************************************************************/
 // NOTE => manifest to install new field type in sugar
 $manifest = array (
-	'acceptable_sugar_versions' => array ('6.*.*','7.*.*'),
-	'acceptable_sugar_flavors' => array ('CE','PRO','ENT','ULT'),
-          'readme'=>'',
-          'author' => 'Editha Kuske',
-          'description' => 'Ampel data type',
-          'icon' => '',
-          'is_uninstallable' => true,
-          'name' => 'Ampel',
-          'published_date' => '2016-01-04',
-          'type' => 'module',
-          'version' => '7.7.0',
-          );
+	'acceptable_sugar_versions' => array (
+		'6.*.*',
+		'7.*.*',
+		'8.*.*',
+	),
+	'acceptable_sugar_flavors' => array (
+		'CE',
+		'PRO',
+		'ENT',
+		'ULT',
+	),
+    'readme'=>'',
+    'author' => 'Editha Kuske',
+    'description' => 'Ampel data type',
+    'icon' => '',
+    'is_uninstallable' => true,
+    'name' => 'Ampel',
+    'published_date' => '2018-10-01',
+    'type' => 'module',
+    'version' => '8.0.0',
+);
+
 $installdefs = array (
 'id' => 'Ampel',
 'copy' =>
