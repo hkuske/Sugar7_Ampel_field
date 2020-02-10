@@ -27,13 +27,22 @@ class TemplateAmpel extends TemplateInt
 		return "<input type='text' name='". $this->name. "' id='".$this->name."' title='{" . strtoupper($this->name) ."_HELP}' size='".$this->size."' maxlength='".$this->len."' value='{". strtoupper($this->name). "}'>";
 	}
 
-	function populateFromPost(){
-		parent::populateFromPost();
+//	function populateFromPost(){
+	public function populateFromPost(Request $request = null)
+    {
+//new:		
+        if (!$request) {
+            $request = InputValidation::getService();
+        }
+//:new
+
+        parent::populateFromPost($request);
 		if (isset($this->auto_increment))
 		{
 		    $this->auto_increment = $this->auto_increment == "true" || $this->auto_increment === true;
 		}
 	}
+
 
     function get_field_def(){
 		$vardef = parent::get_field_def();
