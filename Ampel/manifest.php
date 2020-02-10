@@ -39,6 +39,7 @@ $manifest = array (
 		'6.*.*',
 		'7.*.*',
 		'8.*.*',
+		'9.*.*',
 	),
 	'acceptable_sugar_flavors' => array (
 		'CE',
@@ -54,7 +55,7 @@ $manifest = array (
     'name' => 'Ampel',
     'published_date' => '2018-10-01',
     'type' => 'module',
-    'version' => '8.0.0',
+    'version' => '9.0.0',
 );
 
 $installdefs = array (
